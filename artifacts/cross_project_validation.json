@@ -1,0 +1,27 @@
+{
+  "schema_version": "rudolph2023-cross-project-validation-v1",
+  "environment": {
+    "python": "3.11.5 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:26:23) [MSC v.1916 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.22631-SP0",
+    "numpy": "1.26.4"
+  },
+  "source_provenance": {
+    "rudolph2023": "cef75614c98b29c52c78cd54624d17eca7f18d915edbdd7b82e806fbb9da5218",
+    "ran2020": "671a7fb1dec4f7ecbc8338aec636f88ccb5e69cc92436de1816963d9a6aba41a",
+    "bendov2024": "51ce1952d973cd7fd47c6e2df7a05779b7cbc3aeaefeebd91cb6121c7d647954"
+  },
+  "ran2020": {
+    "seeds": 20,
+    "worst_errors": {
+      "compressed": 1.2070835695371291e-14,
+      "residual": 3.00100448992073e-14,
+      "prepared": 1.2093821256352806e-14
+    }
+  },
+  "bendov2024": {
+    "seeds": 50,
+    "worst_environment_error": 0.0,
+    "worst_polar_error": 0.0
+  },
+  "status": "passed"
+}

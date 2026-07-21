@@ -1,0 +1,11 @@
+{
+  "title": "Decomposition of matrix product states into shallow quantum circuits",
+  "authors": "Manuel S. Rudolph et al.",
+  "doi": "10.1088/2058-9565/ad04e6",
+  "online_publication_date": "2023-11-08",
+  "journal": "Quantum Science and Technology 9 (2024) 015012",
+  "local_source": "D:/Jupyter Notebook/TN-Diff/参考文献/Rudolph 等 - 2023 - Decomposition of matrix product states into shallow quantum circuits.pdf",
+  "scope": "Iter[Di O_all] only",
+  "fidelity_convention": "paper plots 1 - abs(<target|prepared>)"
+}
+

@@ -1,0 +1,114 @@
+{
+  "depth": 0,
+  "depth_results": [],
+  "energy_evaluation": {
+    "energy_error_per_site": 0.9118066827929114,
+    "ground_energy": -6.691680193514936,
+    "prepared_energy": 4.25,
+    "storage": "csr"
+  },
+  "execution": {
+    "argv": [
+      "scripts\\run_paper_main_method.py",
+      "--output-root",
+      "artifacts\\paper_runner_smoke_v2",
+      "--depth",
+      "0",
+      "--sweeps",
+      "0",
+      "--random-seed",
+      "2023"
+    ],
+    "working_directory": "C:\\Users\\18283\\Documents\\Codex\\2026-07-06\\ni-h\\Rudolph_2023_work"
+  },
+  "final_metrics": {
+    "amplitude_fidelity": 9.82242864862128e-19,
+    "overlap": {
+      "imag": 0.0,
+      "real": -9.82242864862128e-19
+    },
+    "paper_amplitude_infidelity": 1.0,
+    "squared_infidelity": 1.0,
+    "squared_state_fidelity": 9.648010455725605e-37
+  },
+  "gate_layout": {
+    "order": "physical-execution layer-major; each layer left-site 0..N-2",
+    "qubit_order": "q0-most-significant",
+    "shape": [
+      0,
+      11,
+      4,
+      4
+    ],
+    "terminal_u2_folded": true,
+    "two_qubit_basis": [
+      "00",
+      "01",
+      "10",
+      "11"
+    ]
+  },
+  "learning_rate": 0.6,
+  "num_qubits": 12,
+  "numerical_environment": {
+    "numpy": "1.26.4",
+    "platform": "Windows-10-10.0.22631-SP0",
+    "python": "3.10.15 | packaged by conda-forge | (main, Sep 20 2024, 16:26:40) [MSC v.1941 64 bit (AMD64)]",
+    "scipy": "1.14.1",
+    "thread_environment": {
+      "MKL_NUM_THREADS": null,
+      "NUMEXPR_NUM_THREADS": null,
+      "OMP_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null
+    }
+  },
+  "protocol": "Iter[D_i O_all]",
+  "reproduction_assumptions": {
+    "fractional_power": "principal complex-Schur branch; eigenphase -pi mapped to +pi",
+    "heisenberg_grid_site_order": "row-major open boundaries",
+    "random_mps_seed": "explicit CLI/API seed; paper does not publish sample seeds",
+    "unitary_completion": "deterministic computational-anchor double MGS"
+  },
+  "schema_version": "rudolph2023-iter-di-o-all-v2",
+  "semantic_sha256": {
+    "hamiltonian_csr_data": "c34a800f75e48b4184652af94a38a4a714cbe91ea4df9594dd28b660e3b1f274",
+    "hamiltonian_csr_indices": "2f968de88c16001c1e78cdbfc50cfbdd5540e0707a3e9b56b3f03e266a15d108",
+    "hamiltonian_csr_indptr": "15ddcad4836e0e9f818418a673275e9fedf127c21a9e19c5b59c904a02788db7",
+    "hamiltonian_shape": "76777bacf3101725745df4472c6a4cab685685ae5ff3596cc02752c791d2b99a",
+    "ordered_u4": "e4310623296000fe9b8af3c6f9f6d50fd5ed40245821b16be8b8ca9fe9c15bcc",
+    "prepared_state": "15fe2be12750804a37bcecd9ac774db080f8968f791bdcaaf40e386f7fbd0b35",
+    "target_state": "3e368750b57f7d85b785d8d5cb5547b5c88f2a63386b9f169ea71cd43645f618"
+  },
+  "source_provenance": {
+    "aggregate_sha256": "cef75614c98b29c52c78cd54624d17eca7f18d915edbdd7b82e806fbb9da5218",
+    "algorithm": "sha256",
+    "files": {
+      "__init__.py": "e6dc904980e6ad836ff048871b4fa6f76155785279653a51486276a826a5133f",
+      "__main__.py": "44ca97f02d7c9dcc3768444aa49890a30b27159799a54c2cb8748d7ba72e235b",
+      "analytic.py": "e1d44aed7d6c5af74575c22ba21c11d01fcb03aba302dc99c4cf86cd219d51e1",
+      "circuit.py": "b0e7bf25f49961f508e049a995cfa40fa393b3ac76030883dff43d1b71a325a1",
+      "cli.py": "15ec0253b3d604b3a0b7e0e1661f167df2e99b3d95b7f1bcba67140ad19c81f9",
+      "completion.py": "bb46960c96e141f81c2a68e74b0574092f3d2ec6eed5877dfe2b2ed3790361ab",
+      "conventions.py": "57d520354b7613d9edd729e7e11dea8d7274b2eae6b417119324e349fbbff9ed",
+      "export.py": "4170564f8ec9a37c8134d19d56416fb40509aadeaaeec5082e310bfb22464677",
+      "linalg.py": "61181d9be529ad8ff542abdf5592817db34d5f17853b7f4c6ce7f675b9b4bfae",
+      "metrics.py": "13314868fa84ed3f97df292367fdf2593f934cca7ad822166dc5261f58c4baaf",
+      "mps.py": "7bdfac98bb65f31e6cfbc88ccd63e0144d52749d1944ead23a6ff0cae623af87",
+      "optimizer.py": "0250bc83b5d459d5bea9070780794ccecd41c83983a3376f31cf0d7c4793cf8d",
+      "protocol.py": "615f52fc4595967b86f0e25f279492f9c7338e6241c31af596726f1cd4084e1e",
+      "targets.py": "3e4a7b53e731dad31d708827ca2b63e1c751ccf49654e5c732b7edf3ed99b814"
+    },
+    "package": "rudolph2023"
+  },
+  "sweeps_per_depth": 0,
+  "target_metadata": {
+    "columns": 4,
+    "eigen_residual": 2.1154729454279484e-14,
+    "energy": -6.691680193514936,
+    "gap": 0.521908064293453,
+    "rows": 3,
+    "site_order": "row-major"
+  },
+  "target_name": "heisenberg_3x4",
+  "total_gate_updates": 0
+}

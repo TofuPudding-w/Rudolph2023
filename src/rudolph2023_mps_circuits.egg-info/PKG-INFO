@@ -1,0 +1,126 @@
+Metadata-Version: 2.4
+Name: rudolph2023-mps-circuits
+Version: 0.1.0
+Summary: Audited reproduction of Rudolph et al. Iter[Di O_all] MPS encoding.
+Requires-Python: <3.13,>=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: numpy<3,>=1.26
+Requires-Dist: scipy<2,>=1.11
+Provides-Extra: test
+Requires-Dist: pytest<10,>=7.4; extra == "test"
+Provides-Extra: dev
+Requires-Dist: pytest<10,>=7.4; extra == "dev"
+Requires-Dist: pytest-cov<8,>=5; extra == "dev"
+Requires-Dist: ruff<1,>=0.9; extra == "dev"
+Provides-Extra: plot
+Requires-Dist: matplotlib<4,>=3.7; extra == "plot"
+Provides-Extra: noise
+Requires-Dist: qiskit<3,>=2.2; extra == "noise"
+Requires-Dist: qiskit-aer<0.18,>=0.17; extra == "noise"
+Requires-Dist: qiskit-ibm-runtime<0.49,>=0.45; extra == "noise"
+
+# Rudolph et al. shallow MPS circuit decomposition
+
+This project independently reproduces the paper's main protocol
+`Iter[D_i O_all]`. It intentionally does not implement all five ablation
+baselines or early stopping. Native compilation and FakeWashingtonV2 noise are
+available only as a read-only downstream evaluation of a frozen paper-method
+artifact; they do not alter the reproduced algorithm.
+
+The implementation is convention-explicit and audit-oriented:
+
+- `complex128`, q0 most significant;
+- each macro-layer has exactly `N-1` ordered adjacent U(4) gates;
+- Ran's terminal U(2) is folded into the last U(4);
+- every new analytic layer is prepended to physical execution;
+- all existing gates receive fixed-budget forward sweeps;
+- the residual is recomputed from the optimized circuit before the next layer;
+- paper infidelity is `1 - abs(<target|prepared>)`;
+- squared fidelity is also exported for cross-paper comparison.
+
+## Install
+
+```bash
+conda create -n rudolph2023-py311 python=3.11 -y
+conda activate rudolph2023-py311
+python -m pip install --upgrade pip
+python -m pip install -e '.[dev,plot]'
+```
+
+For the optional calibrated-noise evaluation:
+
+```bash
+python -m pip install -e '.[dev,plot,noise]'
+```
+
+## Validation
+
+```bash
+python -m pytest -q
+python -m pytest -q -m 'not slow'
+python -m ruff check .
+python -m compileall -q src tests scripts
+```
+
+The complete suite includes three `N=12, K=8, T=10` paper-scale regression
+cases. The session audit fails unless every source-defined function/method is
+called by the tests.
+
+## Smoke
+
+```bash
+python -m rudolph2023 doctor
+python -m rudolph2023 smoke --output artifacts/ubuntu_smoke
+python -m rudolph2023 verify-artifact artifacts/ubuntu_smoke
+```
+
+## One many-body target
+
+```bash
+python -m rudolph2023 run \
+  --target tfim \
+  --num-qubits 12 \
+  --coupling 1.0 \
+  --field-x 1.0 \
+  --depth 8 \
+  --sweeps 10 \
+  --output artifacts/tfim_n12_k8_t10
+```
+
+## FakeWashingtonV2 native-noise post-processing
+
+First produce and verify a noiseless artifact as above. Then run:
+
+```bash
+python -m rudolph2023 native-noise \
+  --artifact artifacts/tfim_n12_k8_t10 \
+  --output artifacts/tfim_n12_k8_t10_washington \
+  --optimization-level 0 \
+  --seed-transpiler 2026 \
+  --seed-simulator 2026 \
+  --max-density-matrix-qubits 12
+```
+
+Omitting the physical path selects a deterministic connected path. Read that
+path from the output manifest, then pass it explicitly for formal cross-method
+comparisons and require the reported backend snapshot SHA-256 to match.
+
+The command exactly synthesizes each U(4) to `rz/sx/x/cx`, forbids routing and
+SWAP insertion, and then simulates gate plus thermal-relaxation noise with
+Aer's density-matrix method. It exports logical, compilation, noisy-target and
+native-retention fidelities separately, plus noisy energy error per site when
+the source artifact contains a Hamiltonian. No measurement/readout noise is
+used, and the raw density matrix is not exported.
+
+## Paper main-method grid
+
+```bash
+python scripts/run_paper_main_method.py \
+  --output-root artifacts/figure4_main \
+  --depth 8 \
+  --sweeps 10 100 1000 \
+  --random-seed 2023
+```
+
+See `docs/` for the derivation, convention ledger, function-level validation
+matrix, known paper ambiguities, FakeWashingtonV2 protocol, and Ubuntu runbook.

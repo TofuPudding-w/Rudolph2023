@@ -1,0 +1,17 @@
+{
+  "called_count": 111,
+  "expected_count": 111,
+  "finished_utc": "2026-07-19T04:59:36.628622+00:00",
+  "full_suite_requested": true,
+  "missing": [],
+  "process_id": 31608,
+  "pytest_argv": [
+    "-q"
+  ],
+  "schema_version": "rudolph2023-function-call-audit-v2",
+  "scope_note": "Entry-call coverage only; mathematical correctness is established by independent oracle, property, regression, and cross-implementation tests. Slow paper-scale tests are not profiled because their source functions are already exercised by focused tests.",
+  "source_tree_sha256": "cef75614c98b29c52c78cd54624d17eca7f18d915edbdd7b82e806fbb9da5218",
+  "started_utc": "2026-07-19T04:58:42.276253+00:00",
+  "status": "passed",
+  "test_tree_sha256": "02e54afd9c46346a5e4d938f20164a5b0adbae3aec33108d370a7b4a9424dd91"
+}

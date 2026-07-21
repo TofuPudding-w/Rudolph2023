@@ -1,0 +1,245 @@
+{
+  "compact_to_physical": [
+    0,
+    1
+  ],
+  "instruction_calibrations": [
+    {
+      "compact_qubits": [
+        0,
+        1
+      ],
+      "duration_seconds": 8.533333333333332e-07,
+      "error": 0.014268704318191883,
+      "name": "cx",
+      "physical_qubits": [
+        0,
+        1
+      ]
+    },
+    {
+      "compact_qubits": [
+        1,
+        0
+      ],
+      "duration_seconds": 8.177777777777777e-07,
+      "error": 0.014268704318191883,
+      "name": "cx",
+      "physical_qubits": [
+        1,
+        0
+      ]
+    },
+    {
+      "compact_qubits": [
+        0
+      ],
+      "duration_seconds": null,
+      "error": null,
+      "name": "delay",
+      "physical_qubits": [
+        0
+      ]
+    },
+    {
+      "compact_qubits": [
+        1
+      ],
+      "duration_seconds": null,
+      "error": null,
+      "name": "delay",
+      "physical_qubits": [
+        1
+      ]
+    },
+    {
+      "compact_qubits": [
+        0
+      ],
+      "duration_seconds": 3.5555555555555554e-08,
+      "error": 0.0003410223041189624,
+      "name": "id",
+      "physical_qubits": [
+        0
+      ]
+    },
+    {
+      "compact_qubits": [
+        1
+      ],
+      "duration_seconds": 3.5555555555555554e-08,
+      "error": 0.00015601711255331714,
+      "name": "id",
+      "physical_qubits": [
+        1
+      ]
+    },
+    {
+      "compact_qubits": [
+        0
+      ],
+      "duration_seconds": 8.64e-07,
+      "error": 0.00649999999999995,
+      "name": "measure",
+      "physical_qubits": [
+        0
+      ]
+    },
+    {
+      "compact_qubits": [
+        1
+      ],
+      "duration_seconds": 8.64e-07,
+      "error": 0.0121,
+      "name": "measure",
+      "physical_qubits": [
+        1
+      ]
+    },
+    {
+      "compact_qubits": [
+        0
+      ],
+      "duration_seconds": 8.995555555555555e-07,
+      "error": null,
+      "name": "reset",
+      "physical_qubits": [
+        0
+      ]
+    },
+    {
+      "compact_qubits": [
+        1
+      ],
+      "duration_seconds": 8.995555555555555e-07,
+      "error": null,
+      "name": "reset",
+      "physical_qubits": [
+        1
+      ]
+    },
+    {
+      "compact_qubits": [
+        0
+      ],
+      "duration_seconds": 0.0,
+      "error": 0.0,
+      "name": "rz",
+      "physical_qubits": [
+        0
+      ]
+    },
+    {
+      "compact_qubits": [
+        1
+      ],
+      "duration_seconds": 0.0,
+      "error": 0.0,
+      "name": "rz",
+      "physical_qubits": [
+        1
+      ]
+    },
+    {
+      "compact_qubits": [
+        0
+      ],
+      "duration_seconds": 3.5555555555555554e-08,
+      "error": 0.0003410223041189624,
+      "name": "sx",
+      "physical_qubits": [
+        0
+      ]
+    },
+    {
+      "compact_qubits": [
+        1
+      ],
+      "duration_seconds": 3.5555555555555554e-08,
+      "error": 0.00015601711255331714,
+      "name": "sx",
+      "physical_qubits": [
+        1
+      ]
+    },
+    {
+      "compact_qubits": [
+        0
+      ],
+      "duration_seconds": 3.5555555555555554e-08,
+      "error": 0.0003410223041189624,
+      "name": "x",
+      "physical_qubits": [
+        0
+      ]
+    },
+    {
+      "compact_qubits": [
+        1
+      ],
+      "duration_seconds": 3.5555555555555554e-08,
+      "error": 0.00015601711255331714,
+      "name": "x",
+      "physical_qubits": [
+        1
+      ]
+    }
+  ],
+  "noise_options": {
+    "gate_error": true,
+    "readout_error": false,
+    "temperature_millikelvin": 0.0,
+    "thermal_relaxation": true
+  },
+  "physical_path": [
+    0,
+    1
+  ],
+  "physical_to_compact": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "project_site_to_physical_q0_msb": [
+    1,
+    0
+  ],
+  "project_to_qiskit_convention": "site_i_to_compact_qubit_N_minus_1_minus_i",
+  "qubit_calibrations": [
+    {
+      "compact_qubit": 0,
+      "frequency_hz": 5087824350.874885,
+      "physical_qubit": 0,
+      "t1_seconds": 6.932743775451293e-05,
+      "t2_seconds": 1.4143416304440929e-05
+    },
+    {
+      "compact_qubit": 1,
+      "frequency_hz": 4980901514.685951,
+      "physical_qubit": 1,
+      "t1_seconds": 0.00011227381219465642,
+      "t2_seconds": 9.732963644350883e-05
+    }
+  ],
+  "schema_version": "rudolph2023-compact-backend-noise-v1",
+  "snapshot_sha256": "2a8f710b9c6fce598fb4f52124702d37fac2b3bddface60d9630f4319df1307e",
+  "source_backend_class": "qiskit_ibm_runtime.fake_provider.backends.washington.fake_washington.FakeWashingtonV2",
+  "source_backend_name": "fake_washington",
+  "source_num_qubits": 127,
+  "target_operation_names": [
+    "cx",
+    "delay",
+    "id",
+    "measure",
+    "reset",
+    "rz",
+    "sx",
+    "x"
+  ],
+  "two_qubit_gate": "cx"
+}

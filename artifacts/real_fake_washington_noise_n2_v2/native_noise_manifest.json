@@ -1,0 +1,210 @@
+{
+  "created_utc": "2026-07-19T06:05:03.517774+00:00",
+  "environment": {
+    "numpy": "2.2.6",
+    "python": "3.10.20",
+    "qiskit": "2.3.0",
+    "qiskit_aer": "0.17.2",
+    "qiskit_ibm_runtime": "0.45.1"
+  },
+  "metric_definitions": {
+    "compilation_fidelity": "|<psi_logical|psi_native>|^2",
+    "energy_error_per_site": "(Tr[H rho_noisy]-E0)/N",
+    "fidelity_clipping": false,
+    "logical_target_fidelity": "|<psi_target|psi_logical>|^2",
+    "noisy_native_retention_fidelity": "<psi_native|rho_noisy|psi_native>",
+    "noisy_target_fidelity": "<psi_target|rho_noisy|psi_target>",
+    "paper_amplitude_fidelity": "|<psi_target|psi_logical>|"
+  },
+  "native_compilation_protocol": {
+    "approximation": false,
+    "basis_fidelity": 1.0,
+    "block_synthesis": "exact independent U4 to rz/sx/x/cx",
+    "block_synthesis_diagnostics": {
+      "compile_fidelity": 0.9999999999999999,
+      "depth": 2,
+      "logical_phase_aligned_max_abs_error": 6.162975822039155e-33,
+      "logical_phase_over_dense": 0.0,
+      "logical_replay_fidelity": 1.0,
+      "native_basis_only": true,
+      "native_operation_counts": {
+        "cx": 3,
+        "rz": 23,
+        "sx": 16
+      },
+      "native_phase_aligned_max_abs_error": 2.567180004133737e-15,
+      "native_phase_over_logical": 5.430748616234336e-16,
+      "native_replay_fidelity": 0.9999999999999999,
+      "num_qubits": 2,
+      "num_u4_gates": 2
+    },
+    "initial_layout": [
+      0,
+      1
+    ],
+    "routing_method": "none",
+    "seed_transpiler": 2026,
+    "target_compilation": {
+      "depth": 23,
+      "final_index_layout": [
+        0,
+        1
+      ],
+      "gate_counts": {
+        "cx": 3,
+        "rz": 23,
+        "sx": 16
+      },
+      "initial_index_layout": [
+        0,
+        1
+      ],
+      "optimization_level": 0,
+      "seed_transpiler": 2026,
+      "size": 42,
+      "swap_count": 0,
+      "unitary_count": 0
+    },
+    "target_optimization_level": 0
+  },
+  "native_qpy": {
+    "path": "native_circuit.qpy",
+    "sha256": "f74c6b8aa2b1ffde57dbc8c6cb1b63fba099774e404c0cc364b7489ead683387"
+  },
+  "noise_evaluation": {
+    "density_matrix_diagnostics": {
+      "eigenvalue_check_performed": true,
+      "hermiticity_residual": 2.3714374201337736e-16,
+      "minimum_eigenvalue": 0.005786227336893455,
+      "purity": 0.8757167268240114,
+      "trace_error": 6.666110922844695e-16,
+      "trace_imag": -2.5220808271632367e-17,
+      "trace_real": 0.9999999999999993
+    },
+    "energy": {
+      "error_per_site": 0.06669565542597289,
+      "noisy": -1.5870737425565795
+    },
+    "fidelity": {
+      "compilation": 0.9999999999999987,
+      "logical_target": 0.9999999999999989,
+      "native_target": 1.0,
+      "noisy_native_retention": 0.9328105042030748,
+      "noisy_target": 0.9328105042030751
+    },
+    "hardware": {
+      "backend_snapshot_sha256": "2a8f710b9c6fce598fb4f52124702d37fac2b3bddface60d9630f4319df1307e",
+      "physical_path": [
+        0,
+        1
+      ]
+    },
+    "native_circuit": {
+      "depth": 23,
+      "final_index_layout": [
+        0,
+        1
+      ],
+      "gate_counts": {
+        "cx": 3,
+        "rz": 23,
+        "sx": 16
+      },
+      "initial_index_layout": [
+        0,
+        1
+      ],
+      "size": 42
+    },
+    "num_qubits": 2,
+    "schema_version": "rudolph2023-native-density-matrix-v1",
+    "simulation": {
+      "method": "density_matrix",
+      "qiskit_aer_version": "0.17.2",
+      "qiskit_version": "2.3.0",
+      "runtime_seconds": 0.029806099999404978,
+      "seed_simulator": 2026
+    }
+  },
+  "noise_protocol": {
+    "backend": "FakeWashingtonV2",
+    "backend_snapshot_sha256": "2a8f710b9c6fce598fb4f52124702d37fac2b3bddface60d9630f4319df1307e",
+    "compact_backend_snapshot": "fake_washington_compact_snapshot.json",
+    "gate_error": true,
+    "max_density_matrix_qubits": 2,
+    "physical_path": [
+      0,
+      1
+    ],
+    "project_site_to_physical_q0_msb": [
+      1,
+      0
+    ],
+    "raw_density_matrix_exported": false,
+    "readout_error": false,
+    "seed_simulator": 2026,
+    "shots": 1,
+    "shots_semantics": "deterministic density-matrix channel output",
+    "simulator": "AerSimulator(method='density_matrix')",
+    "temperature_millikelvin": 0.0,
+    "thermal_relaxation": true
+  },
+  "noise_source_provenance": {
+    "aggregate_sha256": "37354132885b1035d2c2f36769472ef75e822d5c2ebf986129bbaf94a7ded46e",
+    "algorithm": "sha256",
+    "files": {
+      "native_noise_protocol.py": "f5cc71359e862aaad0d0ff6ed9302936eccd0652fec233ae0686d1de89e68b9c",
+      "qiskit_adapter.py": "ad9ee59da224eaffd3e1324c7245d095b6ce620e37af23a611c1083ad0d2f967",
+      "washington_noise.py": "54b92da10a8ef2d59ec6c95a3bec2235da8baf21a8b23d69229fc5d26dbfbdbc"
+    }
+  },
+  "provenance": {
+    "command": "native-noise",
+    "doctor": {
+      "complex_dtype": "complex128",
+      "fidelity": "paper infidelity = 1 - abs(<target|prepared>)",
+      "fractional_power": "principal complex-Schur branch; -1 -> +pi",
+      "layer": "N-1 ordered adjacent U(4), no terminal U(2)",
+      "learning_rate": 0.6,
+      "numpy": "2.2.6",
+      "platform": "Windows-10-10.0.22631-SP0",
+      "protocol": "Iter[D_i O_all]",
+      "python": "3.10.20 | packaged by conda-forge | (main, Mar  5 2026, 16:36:49) [MSC v.1944 64 bit (AMD64)]",
+      "qubit_order": "q0-most-significant",
+      "scipy": "1.15.3",
+      "target_global_phase": "first maximum-modulus amplitude positive real"
+    }
+  },
+  "runtime_seconds": 0.08387320000110776,
+  "schema_version": "rudolph2023-fake-washington-native-noise-v1",
+  "scope": "read-only post-processing of an existing Rudolph Iter[D_i O_all] artifact; no reoptimization, pruning, approximation, or measurement",
+  "source_artifact": {
+    "depth": 2,
+    "directory": "D:\\pycharm_projects\\Paper_Reproductions\\Rudolph_2023\\artifacts\\real_fake_washington_source_n2_v2",
+    "input_file_sha256": {
+      "SHA256SUMS.json": "c85318dd73bf3ed4d23918a42af7f296c3210e0778fe998273fda55652988927",
+      "manifest.json": "85ba953eb279a580a11ba29f7aa97406c52d7a87844cb99688c849f567b44519",
+      "result_arrays.npz": "ee18f01009a16bf1eeb4cd0735087aa6791a5713bc840349fb6d1a33bd4de5ca"
+    },
+    "num_qubits": 2,
+    "recorded_paper_amplitude_fidelity": 1.0,
+    "recorded_paper_amplitude_infidelity": 0.0,
+    "recorded_squared_state_fidelity": 1.0,
+    "schema_version": "rudolph2023-iter-di-o-all-v2",
+    "source_compatibility": {
+      "artifact_verification": {
+        "amplitude_fidelity": 1.0,
+        "energy_verified": true,
+        "replay_error": 0.0,
+        "schema_version": "rudolph2023-iter-di-o-all-v2",
+        "source_tree_sha256": "d959a184578efb3d8eac83b23c2a1d0a364b0cee92a32bee349780afe469b31d",
+        "status": "verified"
+      },
+      "recorded_core_files_verified": true,
+      "strict_source_tree_match": true
+    },
+    "sweeps_per_depth": 2,
+    "target_name": "tfim_ground_state"
+  },
+  "status": "completed"
+}

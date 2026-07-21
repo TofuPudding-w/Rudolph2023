@@ -1,0 +1,2 @@
+[console_scripts]
+rudolph2023 = rudolph2023.cli:main

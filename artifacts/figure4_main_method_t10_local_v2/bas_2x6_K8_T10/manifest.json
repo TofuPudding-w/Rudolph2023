@@ -1,0 +1,208 @@
+{
+  "depth": 8,
+  "depth_results": [
+    {
+      "analytic_overlap_identity_error": 2.7755575615628914e-17,
+      "candidate_amplitude_fidelity": 0.24618298195866548,
+      "candidate_overlap_identity_error": 5.551115123125783e-17,
+      "cumulative_gate_updates": 110,
+      "depth": 1,
+      "gate_updates_this_depth": 110,
+      "max_sweep_environment_error": 5.551115123125783e-17,
+      "optimized_amplitude_fidelity": 0.2461829819586655,
+      "optimized_squared_fidelity": 0.06060606060606062,
+      "paper_infidelity": 0.7538170180413345,
+      "residual_overlap_identity_error": 6.661338147750939e-16
+    },
+    {
+      "analytic_overlap_identity_error": 5.55113606109555e-17,
+      "candidate_amplitude_fidelity": 0.27118633727114083,
+      "candidate_overlap_identity_error": 8.326681868111702e-16,
+      "cumulative_gate_updates": 330,
+      "depth": 2,
+      "gate_updates_this_depth": 220,
+      "max_sweep_environment_error": 8.883175405834741e-16,
+      "optimized_amplitude_fidelity": 0.27538381762060904,
+      "optimized_squared_fidelity": 0.07583624700730086,
+      "paper_infidelity": 0.724616182379391,
+      "residual_overlap_identity_error": 1.387801972349761e-15
+    },
+    {
+      "analytic_overlap_identity_error": 3.886010639576728e-16,
+      "candidate_amplitude_fidelity": 0.28867859280398356,
+      "candidate_overlap_identity_error": 2.2204498714831978e-15,
+      "cumulative_gate_updates": 660,
+      "depth": 3,
+      "gate_updates_this_depth": 330,
+      "max_sweep_environment_error": 2.109427357819903e-15,
+      "optimized_amplitude_fidelity": 0.37031903117154497,
+      "optimized_squared_fidelity": 0.1371361848478317,
+      "paper_infidelity": 0.629680968828455,
+      "residual_overlap_identity_error": 1.9985597391023263e-15
+    },
+    {
+      "analytic_overlap_identity_error": 4.0537675448498327e-16,
+      "candidate_amplitude_fidelity": 0.4624604899340821,
+      "candidate_overlap_identity_error": 4.392005017316682e-15,
+      "cumulative_gate_updates": 1100,
+      "depth": 4,
+      "gate_updates_this_depth": 440,
+      "max_sweep_environment_error": 2.1094415789849982e-15,
+      "optimized_amplitude_fidelity": 0.5100179145249419,
+      "optimized_squared_fidelity": 0.260118273136371,
+      "paper_infidelity": 0.48998208547505806,
+      "residual_overlap_identity_error": 3.885798577472432e-15
+    },
+    {
+      "analytic_overlap_identity_error": 1.1121272157765006e-16,
+      "candidate_amplitude_fidelity": 0.5452614363960984,
+      "candidate_overlap_identity_error": 3.4417543294367687e-15,
+      "cumulative_gate_updates": 1650,
+      "depth": 5,
+      "gate_updates_this_depth": 550,
+      "max_sweep_environment_error": 3.3351835234438792e-15,
+      "optimized_amplitude_fidelity": 0.7028252159868078,
+      "optimized_squared_fidelity": 0.49396328422690305,
+      "paper_infidelity": 0.2971747840131922,
+      "residual_overlap_identity_error": 2.335152286779397e-15
+    },
+    {
+      "analytic_overlap_identity_error": 6.666762596885755e-16,
+      "candidate_amplitude_fidelity": 0.7282516076261245,
+      "candidate_overlap_identity_error": 1.2243215724550222e-15,
+      "cumulative_gate_updates": 2310,
+      "depth": 6,
+      "gate_updates_this_depth": 660,
+      "max_sweep_environment_error": 2.4428344579774804e-15,
+      "optimized_amplitude_fidelity": 0.9696937228066799,
+      "optimized_squared_fidelity": 0.9403059160506781,
+      "paper_infidelity": 0.03030627719332013,
+      "residual_overlap_identity_error": 9.21499844126941e-15
+    },
+    {
+      "analytic_overlap_identity_error": 3.3306718973174304e-16,
+      "candidate_amplitude_fidelity": 0.9736755348083903,
+      "candidate_overlap_identity_error": 1.032508934613749e-14,
+      "cumulative_gate_updates": 3080,
+      "depth": 7,
+      "gate_updates_this_depth": 770,
+      "max_sweep_environment_error": 4.552021497722741e-15,
+      "optimized_amplitude_fidelity": 0.9911074459517295,
+      "optimized_squared_fidelity": 0.9822939694209604,
+      "paper_infidelity": 0.008892554048270496,
+      "residual_overlap_identity_error": 1.3655966321940583e-14
+    },
+    {
+      "analytic_overlap_identity_error": 1.3322681159322993e-15,
+      "candidate_amplitude_fidelity": 0.9922449918709917,
+      "candidate_overlap_identity_error": 1.3767591839987707e-14,
+      "cumulative_gate_updates": 3960,
+      "depth": 8,
+      "gate_updates_this_depth": 880,
+      "max_sweep_environment_error": 4.220702361029272e-15,
+      "optimized_amplitude_fidelity": 0.9963144827092957,
+      "optimized_squared_fidelity": 0.9926425484562914,
+      "paper_infidelity": 0.003685517290704321,
+      "residual_overlap_identity_error": 2.5868446254635427e-14
+    }
+  ],
+  "energy_evaluation": null,
+  "execution": {
+    "argv": [
+      "scripts\\run_paper_main_method.py",
+      "--output-root",
+      "artifacts\\figure4_main_method_t10_local_v2",
+      "--depth",
+      "8",
+      "--sweeps",
+      "10",
+      "--random-seed",
+      "2023"
+    ],
+    "working_directory": "C:\\Users\\18283\\Documents\\Codex\\2026-07-06\\ni-h\\Rudolph_2023_work"
+  },
+  "final_metrics": {
+    "amplitude_fidelity": 0.9963144827092957,
+    "overlap": {
+      "imag": -2.8906959833631396e-12,
+      "real": 0.9963144827092957
+    },
+    "paper_amplitude_infidelity": 0.003685517290704321,
+    "squared_infidelity": 0.007357451543708593,
+    "squared_state_fidelity": 0.9926425484562914
+  },
+  "gate_layout": {
+    "order": "physical-execution layer-major; each layer left-site 0..N-2",
+    "qubit_order": "q0-most-significant",
+    "shape": [
+      8,
+      11,
+      4,
+      4
+    ],
+    "terminal_u2_folded": true,
+    "two_qubit_basis": [
+      "00",
+      "01",
+      "10",
+      "11"
+    ]
+  },
+  "learning_rate": 0.6,
+  "num_qubits": 12,
+  "numerical_environment": {
+    "numpy": "1.26.4",
+    "platform": "Windows-10-10.0.22631-SP0",
+    "python": "3.10.15 | packaged by conda-forge | (main, Sep 20 2024, 16:26:40) [MSC v.1941 64 bit (AMD64)]",
+    "scipy": "1.14.1",
+    "thread_environment": {
+      "MKL_NUM_THREADS": null,
+      "NUMEXPR_NUM_THREADS": null,
+      "OMP_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null
+    }
+  },
+  "protocol": "Iter[D_i O_all]",
+  "reproduction_assumptions": {
+    "fractional_power": "principal complex-Schur branch; eigenphase -pi mapped to +pi",
+    "heisenberg_grid_site_order": "row-major open boundaries",
+    "random_mps_seed": "explicit CLI/API seed; paper does not publish sample seeds",
+    "unitary_completion": "deterministic computational-anchor double MGS"
+  },
+  "schema_version": "rudolph2023-iter-di-o-all-v2",
+  "semantic_sha256": {
+    "ordered_u4": "4ffd9a89ea3ea18233012c91fb3a40ea08125667268b6798f29ccc49ece9824f",
+    "prepared_state": "58f3ddc0ba593d412d193f5697d3ccad1e84371c080a23529ac06400398baaa5",
+    "target_state": "978e2b36fa2af1379f151a0bc2a0f4efaf8fa2043589e9b9aae86d105fa4daee"
+  },
+  "source_provenance": {
+    "aggregate_sha256": "cef75614c98b29c52c78cd54624d17eca7f18d915edbdd7b82e806fbb9da5218",
+    "algorithm": "sha256",
+    "files": {
+      "__init__.py": "e6dc904980e6ad836ff048871b4fa6f76155785279653a51486276a826a5133f",
+      "__main__.py": "44ca97f02d7c9dcc3768444aa49890a30b27159799a54c2cb8748d7ba72e235b",
+      "analytic.py": "e1d44aed7d6c5af74575c22ba21c11d01fcb03aba302dc99c4cf86cd219d51e1",
+      "circuit.py": "b0e7bf25f49961f508e049a995cfa40fa393b3ac76030883dff43d1b71a325a1",
+      "cli.py": "15ec0253b3d604b3a0b7e0e1661f167df2e99b3d95b7f1bcba67140ad19c81f9",
+      "completion.py": "bb46960c96e141f81c2a68e74b0574092f3d2ec6eed5877dfe2b2ed3790361ab",
+      "conventions.py": "57d520354b7613d9edd729e7e11dea8d7274b2eae6b417119324e349fbbff9ed",
+      "export.py": "4170564f8ec9a37c8134d19d56416fb40509aadeaaeec5082e310bfb22464677",
+      "linalg.py": "61181d9be529ad8ff542abdf5592817db34d5f17853b7f4c6ce7f675b9b4bfae",
+      "metrics.py": "13314868fa84ed3f97df292367fdf2593f934cca7ad822166dc5261f58c4baaf",
+      "mps.py": "7bdfac98bb65f31e6cfbc88ccd63e0144d52749d1944ead23a6ff0cae623af87",
+      "optimizer.py": "0250bc83b5d459d5bea9070780794ccecd41c83983a3376f31cf0d7c4793cf8d",
+      "protocol.py": "615f52fc4595967b86f0e25f279492f9c7338e6241c31af596726f1cd4084e1e",
+      "targets.py": "3e4a7b53e731dad31d708827ca2b63e1c751ccf49654e5c732b7edf3ed99b814"
+    },
+    "package": "rudolph2023"
+  },
+  "sweeps_per_depth": 10,
+  "target_metadata": {
+    "columns": 6,
+    "flattening": "row-major",
+    "rows": 2,
+    "support_size": 66
+  },
+  "target_name": "bas_2x6",
+  "total_gate_updates": 3960
+}

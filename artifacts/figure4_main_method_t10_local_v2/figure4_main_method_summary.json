@@ -1,0 +1,65 @@
+{
+  "schema_version": "rudolph2023-figure4-main-method-v1",
+  "protocol": "Iter[D_i O_all]",
+  "runs": [
+    {
+      "target": "heisenberg_3x4",
+      "depth": 8,
+      "sweeps_per_depth": 10,
+      "seconds": 3.3329874999999447,
+      "total_gate_updates": 3960,
+      "amplitude_fidelity": 0.971655798233501,
+      "paper_infidelity": 0.02834420176649899,
+      "squared_state_fidelity": 0.944114990240782,
+      "manifest": "C:\\Users\\18283\\Documents\\Codex\\2026-07-06\\ni-h\\Rudolph_2023_work\\artifacts\\figure4_main_method_t10_local_v2\\heisenberg_3x4_K8_T10\\manifest.json",
+      "verification": {
+        "status": "verified",
+        "schema_version": "rudolph2023-iter-di-o-all-v2",
+        "replay_error": 0.0,
+        "amplitude_fidelity": 0.971655798233501,
+        "source_tree_sha256": "cef75614c98b29c52c78cd54624d17eca7f18d915edbdd7b82e806fbb9da5218",
+        "energy_verified": true
+      },
+      "prepared_energy": -6.4579472290548114,
+      "energy_error_per_site": 0.019477747038343745
+    },
+    {
+      "target": "bas_2x6",
+      "depth": 8,
+      "sweeps_per_depth": 10,
+      "seconds": 3.1181085000007442,
+      "total_gate_updates": 3960,
+      "amplitude_fidelity": 0.9963144827092957,
+      "paper_infidelity": 0.003685517290704321,
+      "squared_state_fidelity": 0.9926425484562914,
+      "manifest": "C:\\Users\\18283\\Documents\\Codex\\2026-07-06\\ni-h\\Rudolph_2023_work\\artifacts\\figure4_main_method_t10_local_v2\\bas_2x6_K8_T10\\manifest.json",
+      "verification": {
+        "status": "verified",
+        "schema_version": "rudolph2023-iter-di-o-all-v2",
+        "replay_error": 0.0,
+        "amplitude_fidelity": 0.9963144827092957,
+        "source_tree_sha256": "cef75614c98b29c52c78cd54624d17eca7f18d915edbdd7b82e806fbb9da5218",
+        "energy_verified": false
+      }
+    },
+    {
+      "target": "random_real_mps",
+      "depth": 8,
+      "sweeps_per_depth": 10,
+      "seconds": 3.067459300000337,
+      "total_gate_updates": 3960,
+      "amplitude_fidelity": 0.8724798693282054,
+      "paper_infidelity": 0.12752013067179457,
+      "squared_state_fidelity": 0.7612211223829625,
+      "manifest": "C:\\Users\\18283\\Documents\\Codex\\2026-07-06\\ni-h\\Rudolph_2023_work\\artifacts\\figure4_main_method_t10_local_v2\\random_real_mps_K8_T10\\manifest.json",
+      "verification": {
+        "status": "verified",
+        "schema_version": "rudolph2023-iter-di-o-all-v2",
+        "replay_error": 0.0,
+        "amplitude_fidelity": 0.8724798693282054,
+        "source_tree_sha256": "cef75614c98b29c52c78cd54624d17eca7f18d915edbdd7b82e806fbb9da5218",
+        "energy_verified": false
+      }
+    }
+  ]
+}
